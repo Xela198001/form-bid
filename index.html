@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <script src="js/country.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="row row-img">
+          <div class="img-text">
+            <span class="text">Reduslim</span>
+            <span class="text">ECo</span>
+          </div>
+          <div class="ellipse">
+            <img src="img/reduslim.png" alt="Reduslim" />
+          </div>
+        </div>
+        <div class="row row-form">
+          <h1 class="form-title">Сделай шаг к&nbsp;выздоровлению</h1>
+          <form action="#" method="post" class="form-order">
+            <label for="">ваше <span>имя</span></label>
+            <input type="text" name="name" id="name" class="name" placeholder="Алексей" />
+            <label for="">ваш <span>телефон</span></label>
+            <div class="phone-group">
+              <input type="text" name="name" id="phone" class="phone-number" placeholder="+7 (123) 456 78-90" pattern="2 ([0-9]{3}) [0-9]{3} [0-9]{2}-[0-9]{2}"/>
+              <div class="country-group">
+                <input
+                  type="text"
+                  size="3"
+                  name=""
+                  id="country-phone"
+                  class="country-phone-value"
+                  aria-autocomplete="off"
+                  value="RU"
+                />
+                <span class="icon">
+                  <svg class="icon-country">
+                    <use xlink:href="img/icon-ru.svg#icon_ru"></use>
+                  </svg>
+                </span>
+                <span class="arrow"></span>
+                <ul class="country-list">
+                  <li class="country-item">
+                    Россия
+                    <span class="icon"></span>
+                  </li>
+                  <li class="country-item"></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <select name="country-phone" id="country-phone" class="country-phone">
+              <option value="+7">
+                RU
+                <span>
+                  <svg class="icon-social">
+                    <use xlink:href="img/icon-ru.svg#ru"></use>
+                  </svg>
+                </span>
+              </option> -->
+            <!-- </select> -->
+            <button type="submit">Заказать</button>
+          </form>
+        </div>
+      </div>
+      <div class="secure">
+          <span>Trusted</span>
+          <span>
+            <img src="img/lock.svg" alt="lock" srcset="">
+          </span>
+          <span>Secure</span>
+        </div>
+    </div>
+  </body>
+</html>

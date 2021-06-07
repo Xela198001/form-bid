@@ -1,0 +1,136 @@
+@media screen and (min-width: 528px) {
+  .container {
+    width: 100%;
+    padding: 75px 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .wrapper {
+      .row-form .phone-group .phone-number {
+        max-width: 400px;
+        flex: 1 1;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 1280px;
+    padding: 75px 80px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      .row {
+        width: 50%;
+      }
+
+      .row-img {
+        position: relative;
+        background: linear-gradient(180deg, #428a60 0%, #35734f 100%);
+        box-shadow: 0px 24px 80px rgba(0, 0, 0, 0.1);
+        border-radius: 1px;
+        flex-direction: row;
+        padding-bottom: 30px;
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 688px;
+          height: 688px;
+          left: 315px;
+          top: -19px;
+          opacity: 0.03;
+          border: 20px solid #ffffff;
+          border-radius: 50%;
+          box-sizing: border-box;
+          z-index: 1;
+        }
+        .img-text {
+          width: 85%;
+          height: 85%;
+          position: absolute;
+          top: 41px;
+          left: 40px;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          color: #fff;
+
+          // span:last-child {
+          //   position: absolute;
+          //   bottom: 0;
+          //   left: 40px;
+          // }
+        }
+
+        .ellipse {
+          width: 398px;
+          height: 398px;
+          left: 230px;
+          top: 110px;
+          margin-left: 20px;
+          margin-top: 71px;
+          background: #428a60;
+          z-index: 2;
+
+          img {
+            width: 465px;
+            height: 255px;
+            margin-left: 140px;
+            margin-top: 250px;
+            margin-bottom: 113px;
+          }
+        }
+      }
+      .row-form {
+        .form-title {
+          padding: 29px 128px 29px 127px;
+          margin-bottom: 0;
+          background: #f8f8f8;
+          text-align: center;
+        }
+
+        .form-order {
+          padding: 52px 123px 60px 117px;
+          box-sizing: border-box;
+
+          .phone-group {
+            margin-bottom: 37px;
+
+            .phone-number {
+              max-width: 185px;
+              margin-right: 20px;
+            }
+
+            .country-group {
+              width: 116.18px;
+              padding: 16px 20px;
+
+              .icon {
+                margin-right: 10px;
+              }
+            }
+          }
+
+          button[type="submit"] {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    .secure {
+      display: none;
+    }
+  }
+}
