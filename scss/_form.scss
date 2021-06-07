@@ -76,7 +76,7 @@ body {
       }
 
       .form-order {
-        width: 100%;
+        width: 320px;
         display: flex;
         flex-flow: column;
       }
@@ -224,6 +224,13 @@ body {
 
             &.show {
               display: flex;
+            }
+
+            .country-item {
+
+              &:hover {
+                cursor: pointer;
+              }
             }
           }
         }
